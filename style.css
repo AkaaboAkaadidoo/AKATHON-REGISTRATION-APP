@@ -1,0 +1,77 @@
+:root{
+  --bg: #1e272a;
+  --muted: #4f5353;
+  --accent-cyan: #69dbf5;
+  --accent-teal: #518cab;
+  --accent-green: #5f9f49;
+  --text: #edf7f4;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg) 0%, #121416 100%);
+  color: var(--text);
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 24px auto;
+}
+
+.site-header {
+  text-align: center;
+  padding: 28px 0 10px 0;
+}
+
+.logo-img {
+  height: 120px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.5px;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: var(--text);
+}
+
+.registration-card .card-title {
+  color: var(--accent-green);
+}
+
+.info-card .card-body {
+  border-left: 4px solid var(--accent-teal);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal));
+  border: none;
+}
+
+.page-wrapper .content {
+  margin-top: 12px;
+}
+
+.site-footer {
+  text-align:center;
+  padding: 18px 0;
+  color: var(--muted);
+  margin-top: 24px;
+}
+
+.table {
+  color: var(--bg);
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
