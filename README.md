@@ -1,0 +1,2 @@
+# AKATHON REGISTRATION APP
+Design for 2024/2025 and 2025/2026 Akathonistas
