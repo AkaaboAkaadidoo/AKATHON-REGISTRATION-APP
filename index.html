@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-md-6">
+    <div class="card registration-card">
+      <div class="card-body">
+        <h3 class="card-title">Register as Akathonista (capacity: 30 per cohort)</h3>
+        <form method="post" action="{{ url_for('register') }}">
+          <div class="mb-3">
+            <label class="form-label">Cohort</label>
+            <select name="cohort" class="form-select" required>
+              <option value="">Choose</option>
+              <option value="2024">2024 Akathonistas</option>
+              <option value="2025">2025 Akathonistas</option>
+            </select>
+            <div class="form-text">Choose the cohort (YEAR) that matches your username/password.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">USER NAME</label>
+            <input name="username" class="form-control" placeholder="PLASU/2024/FNAS/1234" required />
+            <div class="form-text">Format: PLASU/YEAR/FNAS/MAT (MAT = 4 digits)</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">PASSWORD</label>
+            <input name="password" type="text" class="form-control" placeholder="AKTH/2024/CCC/1234" required />
+            <div class="form-text">Format: AKTH/YEAR/CCC/MAT — YEAR & MAT must match the username and chosen cohort.</div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+    <p class="mt-3 small">
+      After registration you can ask admin to export the students list as Excel using the admin key.
+    </p>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card info-card">
+      <div class="card-body">
+        <h4>Info & rules</h4>
+        <ul>
+           <li>University is a fertile ground for TECH GROWTH.</li>
+          <li>Only 30 registrations allowed per cohort (2024 and 2025).</li>
+          <li>Username and password must follow the exact format shown above.</li>
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
